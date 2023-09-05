@@ -19,7 +19,7 @@ jobs:
          uses: zaproxy/action-baseline@v0.9.0
          with:
            # Target URL
+           token: ${{ secrets.GITHUBTOKEN }}
            target: "http://localhost:4000"
            fail_action: false
-           token: $
            issue_title: Security Tests
